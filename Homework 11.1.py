@@ -14,8 +14,8 @@ for score_dict in score_list:
     score_text = "Player {0} had {1} attempts on {2}. The secret number was {3}.".format(score_dict.get("player_name"),
                   str(score_dict.get("attempts")),
                   score_dict.get("date"),
-                  score_dict.get("secret_number")),
-                  score_dict.get("wrong_guesses")),
+                  score_dict.get("secret_number"),
+                  score_dict.get("wrong_guesses"))
 
     print(score_text)
 
